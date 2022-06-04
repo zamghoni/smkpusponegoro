@@ -1,0 +1,9 @@
+[16-Aug-2019 12:06:20 Asia/Jakarta] PHP Fatal error:  Call to undefined method Kartu::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Kartu.php on line 54
+[16-Aug-2019 12:12:07 Asia/Jakarta] PHP Fatal error:  Call to undefined method Kartu::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Kartu.php on line 54
+[21-Aug-2019 11:53:29 Asia/Jakarta] PHP Fatal error:  Call to undefined method Kartu::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Kartu.php on line 54
+[21-Aug-2019 20:41:52 Asia/Jakarta] PHP Fatal error:  Call to undefined method Kartu::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Kartu.php on line 54
+[24-Aug-2019 10:17:32 Asia/Jakarta] PHP Fatal error:  Call to undefined method Kartu::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Kartu.php on line 54
+[24-Aug-2019 10:23:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ''.'' (T_CONSTANT_ENCAPSED_STRING) in /home/siassmpt/smkastrindo.site/application/controllers/Kartu.php on line 53
+[27-Aug-2019 20:41:51 Asia/Jakarta] PHP Fatal error:  Call to undefined method Laporan::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Laporan.php on line 93
+[27-Aug-2019 20:42:12 Asia/Jakarta] PHP Fatal error:  Call to undefined method Laporan::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Laporan.php on line 93
+[27-Aug-2019 20:44:08 Asia/Jakarta] PHP Fatal error:  Call to undefined method Laporan::redirect() in /home/siassmpt/smkastrindo.site/application/controllers/Laporan.php on line 93

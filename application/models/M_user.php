@@ -81,10 +81,14 @@ class M_user extends CI_model {
 
   public function del($id)
 	{
+    $this->db->where('id_user', $id);
+    $this->db->delete('pembayaran');
+    $this->db->where('user_id', $id);
+    $this->db->delete('pendaftar');
     $this->db->where('id', $id);
     $this->db->delete('user');
   }
-  
+
   public function lunas($id)
   {
     $params = [

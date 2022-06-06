@@ -205,7 +205,7 @@ class Profil extends CI_Controller {
 	public function sejarah()
 	{
 		$data = array(
-      'page' => "Sejarah SMK NU Wahid Hasyim Talang",
+      'page' => "Sejarah SMK Pusponogoro 01 Brebes",
 			'row' => $this->M_profil->sejarah($this->uri->segment(3))->row_array(),
     );
 
@@ -215,7 +215,7 @@ class Profil extends CI_Controller {
 	public function visi_misi()
 	{
 		$data = array(
-			'page' => "Visi dan Misi SMK NU Wahid Hasyim Talang",
+			'page' => "Visi dan Misi SMK Pusponogoro 01 Brebes",
 			'row' => $this->M_profil->visi_misi($this->uri->segment(3))->row_array(),
 		);
 
@@ -225,7 +225,7 @@ class Profil extends CI_Controller {
 	public function struktur()
 	{
 		$data = array(
-			'page' => "Struktur Organisasi SMK NU Wahid Hasyim Talang",
+			'page' => "Struktur Organisasi SMK Pusponogoro 01 Brebes",
 			'row' => $this->M_profil->struktur($this->uri->segment(3))->row_array(),
 		);
 
@@ -235,7 +235,7 @@ class Profil extends CI_Controller {
 	public function kontak()
 	{
 		$data = array(
-			'page' => "Kontak Kami SMK NU Wahid Hasyim Talang",
+			'page' => "Kontak Kami SMK Pusponogoro 01 Brebes",
 		);
 
 		$this->template->load($this->frontendtemplate.'template',$this->frontend.'kontak-kami',$data);

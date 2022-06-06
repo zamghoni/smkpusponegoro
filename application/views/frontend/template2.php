@@ -4,7 +4,23 @@
   <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicon-->
-  <link rel="shortcut icon" type="image/png" href="<?=base_url()?>assets/frontend/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?=base_url()?>assets/frontend/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="<?=base_url()?>assets/frontend/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?=base_url()?>assets/frontend/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="<?=base_url()?>assets/frontend/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?=base_url()?>assets/frontend/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="<?=base_url()?>assets/frontend/img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="<?=base_url()?>assets/frontend/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <!-- Author Meta -->
   <meta name="author" content="colorlib">
   <!-- Meta Description -->
@@ -14,7 +30,7 @@
   <!-- meta character set -->
   <meta charset="UTF-8">
   <!-- Site Title -->
-  <title>SMK NU WAHID HASYIM TALANG</title>
+  <title>SMK PUSPONEGORO 01 BREBES</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!--
@@ -35,13 +51,13 @@
       <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
           <div id="logo">
-            <a href="<?=site_url('home/ppdb')?>"><img src="<?=base_url()?>assets/frontend/img/logo.png" height="50px" alt="SMK NU WAHID HASYIM TALANG" title="SMK NU WAHID HASYIM TALANG" /></a>
+            <a href="<?=site_url('home/ppdb')?>"><img src="<?=base_url()?>assets/frontend/img/logo-ppdb.png" height="50px" alt="SMK PUSPONEGORO 01 BREBES" title="SMK PUSPONEGORO 01 BREBES" /></a>
           </div>
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#info">Informasi</a></li>
-              <li><a href="#jurusan">Kompetensi Keahlian</a></li>
+              <li><a href="<?=site_url('home/ppdb/')?>#home">Home</a></li>
+              <li><a href="<?=site_url('home/ppdb/')?>#info">Informasi</a></li>
+              <li><a href="<?=site_url('home/ppdb/')?>#jurusan">Kompetensi Keahlian</a></li>
               <li><a href="<?=site_url('auth/login')?>" class="genric-btn info small radius">Login</a></li>
               <li><a href="<?=site_url('auth/register')?>" class="genric-btn danger small radius">Daftar Sekarang</a></li>
             </ul>
@@ -58,9 +74,9 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="single-footer-widget">
-              <a href="<?=site_url('home')?>"><img src="<?=base_url()?>assets/frontend/img/logo-moklet.png" height="80px" alt="SMK NU WAHID HASYIM TALANG" title="SMK NU WAHID HASYIM TALANG" /></a><br><p></p>
+              <a href="<?=site_url('home')?>"><img src="<?=base_url()?>assets/frontend/img/logo-moklet.png" height="80px" alt="SMK PUSPONEGORO 01 BREBES" title="SMK PUSPONEGORO 01 BREBES" /></a><br><p></p>
               <ul>
-                <li><p class="text-white">SMK NU Wahid Hasyim Talang. Unggul, Cerdas, Mandiri, Berhaluan Ahlussunnah Wal Jamaah.</p></li>
+                <li><p class="text-white">SMK PUSPONEGORO 01 BREBES. <br> Disiplin, Unggul, Terdepan dan Agamis.</p></li>
               </ul>
             </div>
           </div>
@@ -68,23 +84,23 @@
             <div class="single-footer-widget">
               <h4>Info Pendafatran</h4>
               <ul class="text-white">
-                    <li><i class="fa fa-map-marker fa-lg"></i> Jl. Projosumarto II, Badiran, Pesayangan, Kec. Talang, Tegal, Jawa Tengah 52193 </li>
-                    <li><i class="fa fa-phone fa-lg"></i> (0283) 3447515</li>
-                    <li><i class="fa fa-envelope fa-lg"></i><a class="text-white" href="mailto:smk_wahasta@gmail.com"> smk_wahasta@gmail.com</a></li>
-                    <li><i class="fa fa-clock-o fa-lg"></i> Senin - Sabtu<br>07:00 - 15.30</li>
+                    <li><i class="fa fa-map-marker fa-lg"></i>Jl. Letjen Suprapto No. 176 Brebes Ps. Batang Kecamatan Brebes Kabupaten Brebes Jawa Tengah 52211</li>
+                    <li><i class="fa fa-phone fa-lg"></i> (0283) 672992</li>
+                    <li><i class="fa fa-envelope fa-lg"></i><a class="text-white" href="mailto:smkpusponegorobrebes@yahoo.co.id"> smkpusponegorobrebes@yahoo.co.id</a></li>
+                    <li><i class="fa fa-clock-o fa-lg"></i> Senin - Jumat<br>07:00 - 15.30</li>
                   </ul>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="single-footer-widget">
               <h4>Maps</h4>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7809087917926!2d109.13904351427705!3d-6.916776895002332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb8e2a867c935%3A0x94adc59bcbdc5c15!2sSMA%20NU%20-%20SMK%20NU%20Wahid%20Hasyim!5e0!3m2!1sen!2sid!4v1622302984107!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.208755159901!2d109.03999951479436!3d-6.8655692950386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb07c438b350b%3A0xf5073a04cb256087!2sSMK%20Pusponegoro%2001%20Brebes!5e0!3m2!1sen!2sid!4v1654317262773!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
         </div>
         <div class="footer-bottom row align-items-center justify-content-between">
           <p class="footer-text m-0 col-lg-6 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> SMK NU WAHID HASYIM TALANG. All rights reserved.
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> SMK PUSPONEGORO 01 BREBES. All rights reserved.
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           <div class="col-lg-6 col-sm-12 footer-social">
             <a href="#"><i class="fa fa-facebook"></i></a>

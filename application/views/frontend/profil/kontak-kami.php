@@ -15,7 +15,7 @@
 
 					<div class="row">
             <div class="col-lg-12">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7809087917926!2d109.13904351427705!3d-6.916776895002332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb8e2a867c935%3A0x94adc59bcbdc5c15!2sSMA%20NU%20-%20SMK%20NU%20Wahid%20Hasyim!5e0!3m2!1sen!2sid!4v1622302984107!5m2!1sen!2sid"
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.208755159901!2d109.03999951479436!3d-6.8655692950386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb07c438b350b%3A0xf5073a04cb256087!2sSMK%20Pusponegoro%2001%20Brebes!5e0!3m2!1sen!2sid!4v1654317262773!5m2!1sen!2sid"
               width="100%" height="600" frameborder="1" style="border:0" allowfullscreen></iframe>
             </div>
             </div>
@@ -30,9 +30,9 @@
 									<span class="lnr lnr-home"></span>
 								</div>
 								<div class="contact-detaihls">
-									<h5>Pesayangan, Jawa Tenga</h5>
+									<h5>SMK Pusponegoro 01 Brebes</h5>
 									<p>
-                  Jl. Projosumarto II, Badiran, Pesayangan, Kec. Talang, Tegal, Jawa Tengah 52193
+                  Jl. Letjen Suprapto No. 176 Brebes Ps. Batang Kecamatan Brebes Kabupaten Brebes Jawa Tengah 52211
 									</p>
 								</div>
 							</div>
@@ -43,7 +43,7 @@
                   <span class="lnr lnr-phone-handset"></span>
                 </div>
                 <div class="contact-details">
-                  <h5>(0283) 3447515</h5>
+                  <h5>(0283) 672992</h5>
                   <p> Senin - Jumat
                     06:15 - 15.30</p>
                 </div>
@@ -55,7 +55,7 @@
                   <span class="lnr lnr-envelope"></span>
                 </div>
                 <div class="contact-details">
-                  <h5>smk_wahasta@gmail.com</h5>
+                  <h5>smkpusponegorobrebes@yahoo.co.id</h5>
                   <p>Kirim pesan anda kapanpun dan dimanapun!</p>
                 </div>
               </div>

@@ -44,7 +44,7 @@
             <td><?=$data->nama_siswa?></td>
             <td><?=$data->judul?></td>
             <!--
-            <?php 
+            <?php
             $dates = date_create($data->created_at);
             $date = date_format($dates, "Y-m-d");?>
             <td><?=date_indo($date);?></td>
@@ -79,11 +79,11 @@
                      OK</a><br>
                 <?php } else {
                     echo "Akte : <span class='label label-danger'>NO</span><br>";}
-                    if($data->scan_kk != null) { ?> SKHU :
+                    if($data->scan_kk != null) { ?> Kartu Keluarga :
                     <a class="lightbox label label-success" class='' href="<?=base_url('upload/pendaftar/'.$data->scan_kk)?>" data-plugin-options="{ &quot;type&quot;:&quot;image&quot; }">
                       OK</a><br>
                  <?php } else {
-                       echo "KK : <span class='label label-danger'>NO</span>";}?>
+                       echo "Kartu Keluarga : <span class='label label-danger'>NO</span>";}?>
             </td>
             <td class="actions-hover actions-fade">
               <a href="<?=site_url('pendaftar/cetak_formulir_adm/'.$data->user_id)?>" title="Cetak Formulir" target="_blank"><i class="fa fa-file-pdf-o"></i></a>

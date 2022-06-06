@@ -1,15 +1,15 @@
 <!-- start banner Area -->
-<section class="banner-area relative" id="home" style="background:url(<?=base_url()?>assets/frontend/img/banner-bg.jpg) right; background-repeat: no-repeat;
-  background-size: 1350px;">
+<section class="banner-area relative" id="home" style="background:url(<?=base_url()?>assets/frontend/img/banner-bg.jpg) center; background-repeat: no-repeat;
+  background-size: 1500px;">
   <div class="overlay overlay-bg"></div>
   <div class="container">
     <div class="row fullscreen d-flex align-items-center justify-content-between">
       <div class="banner-content col-lg-12 col-md-12">
         <h1 class="text-uppercase">
-        SMK NU Wahid Hasyim Talang
+        SMK PUSPONEGORO 01 BREBES
         </h1>
         <h4 class="pt-10 pb-10 text-white">
-        Siap Mencetak Generasi Berkarakter Akhlakul Karimah & Siap Dalam Persaingan Global
+        Siap Mencetak Generasi Disiplin, Unggul, Terdepan dan Agamis.
         </h4>
       </div>
     </div>
@@ -27,9 +27,9 @@
             <h4>EKSTRA KULIKULER</h4>
           </div>
           <div class="desc-wrap">
-            <p>Kegiatan ektra kulikuler sebagai wadah pengembangan potensi siswa, yang dapat diikuti oleh siswa sesuai bakat dan minatnya masing masing. 
-            Pilihan bidang yang dikembangkan pada SMK NU Wahid Hasyim diantaranya yaitu : Pramuka, Teater, PMR, PS Pagar Nusa, Seni Hadroh, Design Grafis & TIK, Paduan Suara, Seni Calung</p>
-            
+            <p>Kegiatan ektra kulikuler sebagai wadah pengembangan potensi siswa, yang dapat diikuti oleh siswa sesuai bakat dan minatnya masing masing.
+            Pilihan bidang yang dikembangkan pada SMK Pusponegoro 01 Brebes diantaranya yaitu : Pramuka, Teater, PMR, PS Pagar Nusa, Seni Hadroh, Design Grafis & TIK, Paduan Suara, Seni Calung</p>
+
             <a class="genric-btn info-border circle medium" href="<?=site_url('home/ppdb')?>">Join Now</a>
           </div>
         </div>
@@ -41,13 +41,13 @@
           </div>
           <div class="desc-wrap">
             <p>Fasilitas sekolah merupakan suatu sarana yang sangat dibutuhkan setiap sekolah agar proses belajar mengajar sesuai dengan yang diharapkan.
-            Fasilitas yang terdapat pada SMK NU Wahid Hasyim Talang meliputi :
-            Lab. Komputer, Perpustakaan, Tempat Ibadah, Kantin, Hotspot Area, Bantuan Siswa Miskin & Siswa</p>
+            Fasilitas yang terdapat pada SMK Pusponegoro 01 Brebes Talang meliputi :
+            Lab. Komputer, Perpustakaan, Workshop TKR, Lab. Autocad, Workshop TAV, Tempat Ibadah, Kantin, Hotspot Area</p>
             <a class="genric-btn info-border circle medium" href="<?=site_url('home/ppdb')?>">Join Now</a>
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
@@ -59,7 +59,7 @@
     <div class="row d-flex justify-content-center">
       <div class="menu-content pb-70 col-lg-12">
         <div class="title text-center">
-          <h1 class="mb-10">Berita Terkini SMK NU Wahid Hasyim Talang</h1>
+          <h1 class="mb-10">Berita Terkini SMK Pusponegoro 01 Brebes Talang</h1>
           <p>Ikuti terus informasi dan berita-berita terbaru tentang SMK Wahid Hasyim Talang.</p>
         </div>
       </div>
@@ -91,7 +91,7 @@
   </div>
   </div>
 </section>
-<!-- End blog Area 
+<!-- End blog Area
 
 <section class="cta-one-area relative section-gap" style="background:url(<?=base_url()?>assets/frontend//img/cta-bg.jpg) center; background-repeat: no-repeat;
   background-size: 1350px;">
@@ -114,7 +114,7 @@
           <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-12">
               <div class="title text-center">
-                <h1 class="mb-10">Galeri Terbaru SMK NU Wahid Hasyim Talang</h1>
+                <h1 class="mb-10">Galeri Terbaru SMK Pusponegoro 01 Brebes Talang</h1>
                 <p>Ikuti terus dokumentasi foto dan video terbaru tentang SMK Wahid Hasyim Talang.</p>
               </div>
             </div>

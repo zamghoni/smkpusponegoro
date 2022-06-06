@@ -10,10 +10,10 @@
           Situs PPDB Online
         </h1>
         <h2 class="text-white">
-          Tahun Pelajaran 2021/2022
+          Tahun Pelajaran <script>document.write(new Date().getFullYear());</script> / <script>document.write(new Date().getFullYear()+1);</script>
         </h2>
         <p class="pt-10 pb-10 text-white">
-          Untuk calon pendaftar tahun ajaran 2021/2022 bisa mendaftar melalui website ini atau langsung datang ke tempat pendaftaran
+          Untuk calon pendaftar tahun ajaran <script>document.write(new Date().getFullYear());</script> / <script>document.write(new Date().getFullYear()+1);</script> bisa mendaftar melalui website ini atau langsung datang ke tempat pendaftaran
         </p>
         <a href="<?=site_url('auth/register')?>" class="genric-btn danger big radius text-uppercase">Daftar Sekarang</a>
       </div>
@@ -66,7 +66,7 @@
         </div>
       </div>
     </div>
-    
+
           <div class="row">
           <div class="col-lg-12">
                 <img src="<?=base_url()?>assets/frontend/img/alur_prestasi.png" width="100%"/>
@@ -96,7 +96,7 @@
 						<div class="col-lg-6 pb-30">
 							<div class="single-carusel row align-items-center">
 								<div class="col-12 col-md-6 thumb">
-									<img class="img-fluid" src="<?=base_url('upload/jurusan/'.$row['foto'])?>" alt="">
+									<a href="<?=site_url('jurusan/detail/'.$row['jurusan_id'])?>"><img class="img-fluid" src="<?=base_url('upload/jurusan/'.$row['foto'])?>" alt=""></a>
 								</div>
 								<div class="detials col-12 col-md-6">
 									<a href="<?=site_url('jurusan/detail/'.$row['jurusan_id'])?>"><h4><?=$row['judul']?></h4></a>
@@ -108,7 +108,7 @@
 					</div>
 				</div>
 			</section>
-   
+
 <!-- Start blog Area -->
 <!--
 <section class="blog-area bg-light section-gap" id="gelombang">

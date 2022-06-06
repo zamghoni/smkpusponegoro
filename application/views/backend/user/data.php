@@ -17,7 +17,7 @@
 <?php $this->view('message')?>
   <section class="panel">
     <header class="panel-heading">
-      
+
       <div class="col-lg-10">
         <h2 class="panel-title">Data <?=$page;?></h2>
       </div>
@@ -49,7 +49,7 @@
               <td><?=$data->role == 0? "<span class='label label-primary'>User</span>" : "<span class='label label-danger'>Admin</span>"?></td>
               <td class="actions-hover actions-fade">
 								<a href="<?=site_url('user/edit/'.$data->id)?>" title="Edit"><i class="fa fa-pencil"></i></a>
-								<a href="<?=site_url('user/del/'.$data->id)?>" onclick="return confirm('Apakah anda yakin ingin menghapus <?=$data->username?>?')" title="Delete" class="delete-row"><i class="fa fa-trash-o"></i></a>
+								<a href="<?=site_url('user/del/'.$data->id)?>" onclick="return confirm('Apakah anda yakin ingin menghapus Data User : <?=$data->username?>?\nData Pendaftar dan Pembayaran juga akan dihapus')" title="Delete" class="delete-row"><i class="fa fa-trash-o"></i></a>
 							</td>
             </tr>
             <?php

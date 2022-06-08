@@ -1,4 +1,4 @@
-<section class="banner-area relative about-banner" id="home" style="background:url(<?=base_url()?>assets/frontend/img/top-banner.jpg) right no-repeat;   background-size: 1350px;">
+<section class="banner-area relative about-banner" id="home" style="background:url(<?=base_url()?>assets/frontend/img/top-banner.jpg) bottom center; height: 384px; overflow: hidden; position: relative;">
   <div class="overlay overlay-bg"></div>
   <div class="container">
     <div class="row d-flex align-items-center justify-content-center">
@@ -54,5 +54,3 @@
   </div>
 </section>
 <!-- End event-details Area -->
-
-

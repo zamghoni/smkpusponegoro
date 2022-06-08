@@ -1,6 +1,6 @@
 <!-- start banner Area -->
-<section class="banner-area relative" id="home" style="background:url(<?=base_url()?>assets/frontend/img/banner-bg.jpg) center; background-repeat: no-repeat;
-  background-size: 1500px;">
+<section class="banner-area relative" id="home" style="background:url(<?=base_url()?>assets/frontend/img/banner-bg.jpg) center center; height: 650px; overflow: hidden; position: relative;">
+  </style>
   <div class="overlay overlay-bg"></div>
   <div class="container">
     <div class="row fullscreen d-flex align-items-center justify-content-between">
@@ -41,7 +41,7 @@
           </div>
           <div class="desc-wrap">
             <p>Fasilitas sekolah merupakan suatu sarana yang sangat dibutuhkan setiap sekolah agar proses belajar mengajar sesuai dengan yang diharapkan.
-            Fasilitas yang terdapat pada SMK Pusponegoro 01 Brebes Talang meliputi :
+            Fasilitas yang terdapat pada SMK Pusponegoro 01 Brebes meliputi :
             Lab. Komputer, Perpustakaan, Workshop TKR, Lab. Autocad, Workshop TAV, Tempat Ibadah, Kantin, Hotspot Area</p>
             <a class="genric-btn info-border circle medium" href="<?=site_url('home/ppdb')?>">Join Now</a>
           </div>
@@ -59,8 +59,8 @@
     <div class="row d-flex justify-content-center">
       <div class="menu-content pb-70 col-lg-12">
         <div class="title text-center">
-          <h1 class="mb-10">Berita Terkini SMK Pusponegoro 01 Brebes Talang</h1>
-          <p>Ikuti terus informasi dan berita-berita terbaru tentang SMK Wahid Hasyim Talang.</p>
+          <h1 class="mb-10">Berita Terkini SMK Pusponegoro 01 Brebes</h1>
+          <p>Ikuti terus informasi dan berita-berita terbaru tentang SMK Pusponegoro 01 Brebes.</p>
         </div>
       </div>
     </div>
@@ -77,7 +77,7 @@
           <?php }?>
         </div>
         <?php  $date = date('Y-m-d', strtotime($row['created_at']));?>
-        <p class="meta">By SMK Wahid Hasyim Talang <br> Post : <?=date_indo($date);?></p>
+        <p class="meta">By SMK Pusponegoro 01 20Brebes <br> Post : <?=date_indo($date);?></p>
         <a href="<?=site_url('info/detail/'.$row['info_id'])?>">
           <h5><?=$row['judul']?></h5>
         </a>
@@ -114,8 +114,8 @@
           <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-12">
               <div class="title text-center">
-                <h1 class="mb-10">Galeri Terbaru SMK Pusponegoro 01 Brebes Talang</h1>
-                <p>Ikuti terus dokumentasi foto dan video terbaru tentang SMK Wahid Hasyim Talang.</p>
+                <h1 class="mb-10">Galeri Terbaru SMK Pusponegoro 01 Brebes</h1>
+                <p>Ikuti terus dokumentasi foto dan video terbaru tentang SMK Pusponegoro 01 Brebes.</p>
               </div>
             </div>
           </div>

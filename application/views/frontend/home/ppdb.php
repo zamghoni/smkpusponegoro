@@ -1,6 +1,5 @@
 <!-- start banner Area -->
-<section class="banner-area relative" id="home" style="background:url(<?=base_url()?>assets/frontend/img/banner-bg.jpg) right; background-repeat: no-repeat;
-  background-size: 100%;">
+<section class="banner-area relative" id="home" style="background:url(<?=base_url()?>assets/frontend/img/banner-bg.jpg) center center; height: 650px; overflow: hidden; position: relative;">
   <div class="overlay overlay-bg"></div>
   <div class="container">
     <div class="row fullscreen d-flex align-items-center">

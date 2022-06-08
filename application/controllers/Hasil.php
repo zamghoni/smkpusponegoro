@@ -33,14 +33,14 @@ class Hasil extends CI_Controller {
     $pdf = new FPDF('P','mm',array(215,330));
          // membuat halaman baru
          $pdf->AddPage();
-         $pdf->Image('./assets/backend/assets/images/Kop Surat Wahas.jpg',0,0,-150);
+         $pdf->Image('./assets/backend/assets/images/Kop-Surat-SMK-Pusponegoro.jpg',0,0,-150);
          // setting jenis font yang akan digunakan
          $pdf->Cell(10,50,'',0,1);
-         $pdf->SetFont('Arial','B',13);
+         $pdf->SetFont('Times','B',13);
          // mencetak string
 
          $pdf->Cell(200,6,'PENGUMUMAN HASIL PPDB',0,1,'C');
-         $pdf->Cell(200,6,'SMK NU WAHID HASYIM TALANG',0,1,'C');
+         $pdf->Cell(200,6,'SMK PUSPONEGORO 01 BREBES',0,1,'C');
          $pdf->Cell(200,6,'TAHUN PELAJARAN '.date('Y').'/'.(date('Y')+1),0,1,'C');
          $pdf->SetFont('Times','B',12);
          // $pdf->Cell(190,6,'Tanggal Cetak : '.date('d-m-Y H:i'),0,1,'C');
@@ -51,7 +51,7 @@ class Hasil extends CI_Controller {
 
 				 $id  = $this->fungsi->user_login()->id;
          $data= $this->M_pendaftar->daftar($id);
-         
+
 						 $pdf->SetY(80);
 						 $pdf->Cell(7,7,'');
 						 $pdf->Cell(65,7,'A. IDENTITAS SISWA');
@@ -91,7 +91,7 @@ class Hasil extends CI_Controller {
              $pdf->SetFont('Times','',12);
 						 $pdf->SetY(120);
 						 $pdf->Cell(7,7,'');
-             $pdf->Cell(65,7,'dengan ini panitia PPDB SMK NU Wahid Hasyim Talang menutuskan saudara dinyatakan :');
+             $pdf->Cell(65,7,'dengan ini panitia PPDB SMK Pusponegoro 01 Brebes menutuskan saudara dinyatakan :');
 
              $pdf->SetFont('Times','B',20);
 						 $pdf->SetY(135);
@@ -101,28 +101,28 @@ class Hasil extends CI_Controller {
              $pdf->SetFont('Times','B',12);
 						 $pdf->SetY(145);
 						 $pdf->Cell(7,7,'');
-             $pdf->Cell(180,7,'Di SMK NU Wahid Hasyim Talang Tahun Pelajaran 2021/2022',0,1,'C');
+             $pdf->Cell(180,7,'Di SMK Pusponegoro 01 Brebes Tahun Pelajaran'.date('Y').'/'.(date('Y')+1),0,1,'C');
 
              $pdf->Cell(10,8,'',0,1);
              $pdf->SetFont('Times','B',12);
-             
+
                  $pdf->SetY(155);
                  $pdf->Cell(7,7,'');
                  $pdf->Cell(65,7,'B. Mulai MASUK SEKOLAH :');
-    
+
                  $pdf->SetFont('Times','',12);
                  $pdf->SetY(160);
                  $pdf->Cell(12,7,'');
                  $pdf->Cell(65,7,'Hari / Tanggal');
                  $pdf->Cell(7,7,':');
-                 $pdf->Cell(65,7,'SENIN, 12 Juli 2021');
+                 $pdf->Cell(65,7,'SENIN, 12 Juli '.date('Y').'');
 
                  $pdf->SetFont('Times','',12);
                  $pdf->SetY(165);
                  $pdf->Cell(12,7,'');
                  $pdf->Cell(65,7,'Pukul');
                  $pdf->Cell(7,7,':');
-                 $pdf->Cell(65,7,'07:30 - Selesai');
+                 $pdf->Cell(65,7,'07:00 - Selesai');
 
                  $pdf->SetFont('Times','',12);
                  $pdf->SetY(170);
@@ -136,7 +136,7 @@ class Hasil extends CI_Controller {
                  $pdf->Cell(12,7,'');
                  $pdf->Cell(65,7,'Tempat');
                  $pdf->Cell(7,7,':');
-                 $pdf->Cell(65,7,'SMK NU Wahid Hasyim Talang');
+                 $pdf->Cell(65,7,'SMK Pusponegoro 01 Brebes');
 
                  $pdf->SetFont('Times','',12);
                  $pdf->SetY(180);
@@ -147,18 +147,18 @@ class Hasil extends CI_Controller {
 
                   $pdf->Cell(10,8,'',0,1);
                   $pdf->SetFont('Times','B',12);
-                 
+
                      $pdf->SetY(190);
                      $pdf->Cell(7,7,'');
                      $pdf->Cell(65,7,'Contact Person :');
-        
+
                      $pdf->SetFont('Times','',12);
                      $pdf->SetY(195);
                      $pdf->Cell(12,7,'');
                      $pdf->Cell(65,7,'Hasyim Mashuri');
                      $pdf->Cell(7,7,':');
                      $pdf->Cell(65,7,'085373839383 (WA/SMS)');
-                
+
 
          $pdf->Output('PENGUMUMAN HASIL PPDB '.strtoupper($data['nama_siswa']).'.pdf','D');
         //  $this->redirect('refresh');

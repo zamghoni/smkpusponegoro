@@ -185,7 +185,7 @@ class Pendaftar extends CI_Controller {
 				$pdf = new FPDF('P','mm',array(215,330));
 						 // membuat halaman baru
 						 $pdf->AddPage();
-						 $pdf->Image('./assets/backend/assets/images/Kop Surat Wahas.jpg',0,0,-150);
+						 $pdf->Image('./assets/backend/assets/images/Kop-Surat-SMK-Pusponegoro.jpg',0,0,-150);
 						 // setting jenis font yang akan digunakan
 						 $pdf->Cell(10,45,'',0,1);
 						 $pdf->SetFont('Times','B',14);
@@ -684,7 +684,7 @@ class Pendaftar extends CI_Controller {
         $pdf = new FPDF('P','mm',array(215,330));
              // membuat halaman baru
              $pdf->AddPage();
-             $pdf->Image('./assets/backend/assets/images/Kop Surat Wahas.jpg',0,0,-150);
+             $pdf->Image('./assets/backend/assets/images/Kop-Surat-SMK-Pusponegoro.jpg',0,0,-150);
              // setting jenis font yang akan digunakan
              $pdf->Cell(10,45,'',0,1);
              $pdf->SetFont('Times','B',14);

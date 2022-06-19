@@ -39,7 +39,7 @@
             <?php }?>
             </div>
             <div class="user-details row" style="margin-top:10px">
-              <p class="user-name col-lg-6 col-md-6"><span class="lnr lnr-user"></span><a> SMK Astrindo Tegal</a></p>
+              <p class="user-name col-lg-6 col-md-6"><span class="lnr lnr-user"></span><a> SMK Pusponegoro 01 Brebes</a></p>
               <?php  $date = date('Y-m-d', strtotime($row['created_at']));?>
               <p class="date col-lg-6 col-md-6"><span class="lnr lnr-calendar-full"></span><a> <?=date_indo($date);?></a></p>
             </div>
@@ -60,7 +60,7 @@
              <?php }?>
              </div>
              <div class="user-details row" style="margin-top:10px">
-               <p class="user-name col-lg-6 col-md-6"><span class="lnr lnr-user"></span><a> SMK Astrindo Tegal</a></p>
+               <p class="user-name col-lg-6 col-md-6"><span class="lnr lnr-user"></span><a> SMK Pusponegoro 01 Brebes</a></p>
                <p class="date col-lg-6 col-md-6"><span class="lnr lnr-calendar-full"></span><a> <?=date_indo($date);?></a></p>
              </div>
              <a class="posts-title" href="<?=site_url('info/detail/'.$row['info_id'])?>"><h3><?=$row['judul']?></h3></a>

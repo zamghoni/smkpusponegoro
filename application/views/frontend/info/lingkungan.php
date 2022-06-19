@@ -26,7 +26,7 @@
       <div class="menu-content pb-70 col-lg-8">
         <div class="title text-center">
           <h1 class="mb-10"><?=$page?></h1>
-          <p>Ikuti terus informasi dan berita-berita terbaru tentang SMK NU Wahid Hasyim Talang.</p>
+          <p>Ikuti terus informasi dan berita-berita terbaru tentang SMK Pusponegoro 01 Brebes.</p>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
           <?php }?>
         </div>
         <?php  $date = date('Y-m-d', strtotime($row['created_at']));?>
-        <p class="meta">By SMK NU Wahid Hasyim Talang <br> Post : <?=date_indo($date);?></p>
+        <p class="meta">By SMK Pusponegoro 01 Brebes <br> Post : <?=date_indo($date);?></p>
         <a href="<?=site_url('info/detail/'.$row['info_id'])?>">
           <h5><?=$row['judul']?></h5>
         </a>

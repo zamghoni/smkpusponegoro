@@ -52,8 +52,8 @@ class Auth extends CI_Controller {
                'mailtype'  => 'html',
                'charset'   => 'utf-8',
                'protocol'  => 'smtp',
-               'smtp_host' => 'ssl://mail.smkwahasta.site',
-               'smtp_user' => 'panitiappdb@smkwahasta.site',    // Ganti dengan email gmail kamu
+               'smtp_host' => 'ssl://mail.smkpuspo.site',
+               'smtp_user' => 'panitiappdb@smkpuspo.site',    // Ganti dengan email gmail kamu
                'smtp_pass' => 'smkwahasta01',      // Password gmail kamu
                'smtp_port' => 465,
                'crlf'      => "\r\n",
@@ -61,11 +61,11 @@ class Auth extends CI_Controller {
            ];
 				$this->load->library('email',$config);
 
-				$this->email->from('panitiappdb@smkwahasta.site', 'PPDB Online');
+				$this->email->from('panitiappdb@smkpuspo.site', 'PPDB Online');
 				$this->email->to($post['email']);
 
-				$this->email->subject('Registrasi Berhasil ! | PPDB Online SMK NU Wahid Hasyim Talang');
-				$this->email->message("Hai kamu berhasil registrasi akun PPDB Online SMK NU Wahid Hasyim Talang<br>
+				$this->email->subject('Registrasi Berhasil ! | PPDB Online SMK Pusponegoro 01 Brebes');
+				$this->email->message("Hai kamu berhasil registrasi akun PPDB Online SMK Pusponegoro 01 Brebes<br>
 				dengan username dan password dibawah ini : <br><br>
 				<strong>Username : </strong> ".$post['username']."<br>
 				<strong>Password : </strong> ".$post['password']."<br><br>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2022 at 01:01 PM
+-- Generation Time: Jul 05, 2022 at 01:49 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -245,7 +245,7 @@ CREATE TABLE `pendaftar` (
 
 INSERT INTO `pendaftar` (`pendaftar_id`, `user_id`, `id_gelombang`, `id_jurusan`, `nisn`, `nama_siswa`, `tempat_lahir`, `tgl_lahir`, `jk`, `agama`, `alamat`, `kode_pos`, `no_telp`, `no_hp`, `nama_ayah`, `nama_ibu`, `nama_wali`, `alamat_org`, `nama_sekolah`, `alamat_sekolah`, `kec_sekolah`, `kab_kota_sekolah`, `propinsi`, `tahun_lulus`, `no_ijazah`, `bhs_indo`, `bhs_inggris`, `mtk`, `ipa`, `prestasi`, `info_daftar`, `alasan`, `foto3x4`, `scan_akte`, `scan_kk`, `scan_ijazah1`, `scan_ijazah2`, `scan_skhu`, `created_at`, `updated_at`) VALUES
 (2, 3, 1, 1, '0008787637', 'Muhammad Zaki', 'Tegal', '2006-06-23', 'L', 'Islam', 'Jl. Ismail no 23, tegal', '53111', '086767262726', '086767262726', 'Yadi', 'Fitri', 'Yadi', 'Jl. Ismail no 23, tegal', 'MTS Filial Aliman', 'Jl. Ujungrusi Adiwerna', 'Adiwerna', 'Tegal', 'Jawa Tengah', 2021, '887D8UY76', 90, 80, 80, 80, 'Tidak Ada', '', '', 'Foto3x4-210724-beb3c650aa.jpg', 'Scan_Akte210724-ebe048f252.jpeg', 'Scan_Kartu_Keluarga210724-0374aee111.jpg', 'Scan_Ijazah_1-210724-f442d33fa0.jpeg', 'Scan_Ijazah_2-210724-6074c6aa34.jpeg', 'Scan_SKHU-210724-a2b13d885f.jpeg', '2021-07-24 04:15:13', NULL),
-(4, 5, 1, 2, '0009872827', 'Muhammad Fatwah', 'Tegal', '2015-06-23', 'L', 'Islam', 'Jl. Gemahsari No.24, Pegirikan', '56111', '089898272827', '089898272827', 'Darnoyo', 'Nurhikmah', 'Darnoyo', 'Jl. Gemahsari No.24, Pegirikan', 'SMP N 03 Lebaksiu', 'Jl, Patin No, 28, Lebaksiu', 'Lebaksiu', 'Tegal', 'Jawa Tengah', 2021, '989GJ87871', 95, 95, 95, 95, 'Tidak Ada', '', '', 'Foto3x4-210724-ba038e2a20.jpg', 'Scan_Akte210724-523b9a2124.jpeg', 'Scan_Kartu_Keluarga210724-626fbe83f8.jpg', 'Scan_Ijazah_1-210724-0314ae78de.jpeg', 'Scan_Ijazah_2-210724-9f63074652.jpeg', 'Scan_SKHU-210724-19b650660b.jpeg', '2021-07-24 04:41:07', NULL),
+(4, 5, 1, 2, '0009872827', 'Basuki Murdiyono', 'Tegal', '2015-06-23', 'L', 'Islam', 'Jl. Gemahsari No.24, Pegirikan', '56111', '089898272827', '089898272827', 'Darnoyo', 'Nurhikmah', 'Darnoyo', 'Jl. Gemahsari No.24, Pegirikan', 'SMP N 03 Lebaksiu', 'Jl, Patin No, 28, Lebaksiu', 'Lebaksiu', 'Tegal', 'Jawa Tengah', 2021, '989GJ87871', 95, 95, 95, 95, 'Tidak Ada', '', '', 'Foto3x4-210724-ba038e2a20.jpg', 'Scan_Akte210724-523b9a2124.jpeg', 'Scan_Kartu_Keluarga210724-626fbe83f8.jpg', 'Scan_Ijazah_1-210724-0314ae78de.jpeg', 'Scan_Ijazah_2-210724-9f63074652.jpeg', 'Scan_SKHU-210724-19b650660b.jpeg', '2021-07-24 04:41:07', '2022-06-19 17:34:43'),
 (6, 7, 1, 1, '0008292827', 'Fatimah Zahra', 'Tegal', '2014-06-23', 'P', 'Islam', 'Jl. Petruk No.9, Tegal Selatan', '56111', '089893839383', '089893839383', 'Umar', 'Ulfah', 'Umar', 'Jl. Petruk No.9, Tegal Selatan', 'SMP 2 Lebeteng', 'Jl, Muara No.5, Lebeteng', 'Lebeteng', 'Tegal', 'Jawa Tengah', 2021, '893DF9898', 90, 80, 70, 60, 'Tidak Ada', '', '', 'Foto3x4-210724-baf00f2060.jpg', 'Scan_Akte210724-1101c92ba6.jpeg', 'Scan_Kartu_Keluarga210724-92b70a5271.jpg', 'Scan_Ijazah_1-210724-544a4f59f6.jpeg', 'Scan_Ijazah_2-210724-9d2d3d4c44.jpeg', 'Scan_SKHU-210724-0b1ec36692.jpeg', '2021-07-24 04:54:03', '2021-07-24 04:56:52');
 
 -- --------------------------------------------------------
@@ -294,9 +294,9 @@ CREATE TABLE `profil` (
 INSERT INTO `profil` (`profil_id`, `judul`, `isi`, `foto`, `created_at`, `updated_at`) VALUES
 (3, 'Sejarah SMK Pusponegoro 01 Brebes', '<p>SMK Pusponegoro 01 Brebes merupakan salah satu Sekolah Menengah Kejuruan swasta yang ada di kabupaten Brebes. pada awal berdiri, SMK Pusponegoro 01 Brebes memiliki nama STM Pemda Brebes dibawah naungan Yayasan Pendidikan Pusponegoro 01. semakin banyaknya kebutuhan sumber daya manusia dibidang industri menjadi dasar pendirian Sekolah Menengah Kejuruan ini sehingga pada tanggal 2 Januari 1974 didirikan Badan Pembina STM Pemda yang dirintis oleh YayasanPendidikan Pusponegoro Brebes.</p>\r\n\r\n<p>SMK Pusponegoro 01 brebes memiliki tiga program studi keahlian yaitu Teknik Bangunan, Teknik Kendaraan Ringan, Teknik Audio Video, Dan Akuntansi.</p>\r\n', 'profil-220608-215a71a127.png', '2019-07-13 07:17:53', '2022-06-08 10:11:08'),
 (4, 'Visi dan Misi SMK NU WAHID HASYIM', '<p><strong>VISI</strong></p>\r\n\r\n<p><strong>”<em>Berprestasi dalam mutu, berakhlakul karimah dalam bertingkah laku, berkarya dalam kreatifitas dan berbudaya dalam identitas</em>”.</strong></p>\r\n\r\n<p><strong>MISI</strong></p>\r\n\r\n<ol>\r\n <li><strong>Melaksanakan KBM secara efektif  dengan menghasilkan prestasi yang bermanfaat.</strong></li>\r\n <li><strong>Melaksanakan aqidah islam Ahlusunnah Wal Jama’ah</strong>.</li>\r\n <li><strong>Menumbuhkan sikap berdemokrasi, sehingga menghasilkan semangat untuk maju.</strong></li>\r\n <li><strong>Terciptanya sekolah yang tertib, aman, nyaman, indah dan harmonis.</strong></li>\r\n</ol>\r\n', NULL, '2019-07-13 07:26:43', '2021-05-30 06:00:57'),
-(5, 'Stuktur Organisasi', '', 'profil-210620-ef2a4be547.png', '2019-07-13 07:27:11', '2021-06-20 03:40:52'),
+(5, 'Stuktur Organisasi', '', 'profil-220619-e3acbb1b8d.png', '2019-07-13 07:27:11', '2022-06-19 11:21:48'),
 (6, 'Biaya Pendaftaran', '<p>Total Biaya Pendaftaran Sebesar Rp. <strong>1.060.000.-</strong></p>\r\n\r\n<p>Dibayarkan ke Nomor Rekening: <strong>100-9110-611 BANK BNI</strong></p>\r\n\r\n<p><br>\r\nBiaya pendidikan per bulan Rp. <strong>120.000,00</strong> dibayarkan paling lambat tanggal 5 setiap bulan. Biaya tersebut sudah termasuk untuk: OSIS, Praktikum, Study Tour Ekstrakurikuler, dan Tes Semester.</p>\r\n\r\n<p> </p>\r\n', NULL, '2019-07-16 12:10:46', '2021-07-22 14:34:54'),
-(7, 'Rincian Biaya Masuk', '<p>1. Iuran Dana Pendidikan (SSP) per bulan              Rp. 120.000</p>\r\n\r\n<p>2. Iuran Kegiatan Osis                                          Rp. 200.000</p>\r\n\r\n<p>3. Proses Peningkatan Mutu                                 Rp. 200.000 </p>\r\n\r\n<p>4. Pengadaan Atribut (Osis & Pramuka)                Rp. 80.000</p>\r\n\r\n<p>5. Asuransi                                                         Rp. 25.000</p>\r\n\r\n<p>6. Seragam Sekolah                                            Rp. 435.000</p>\r\n\r\n<p><strong>                                                                Total : Rp. 1.060.000</strong></p>\r\n', NULL, '2019-07-16 12:11:37', '2021-07-22 14:43:40');
+(7, 'Rincian Biaya Masuk', '<p>1. Iuran Dana Pendidikan (SSP) per bulan          Rp. 120.000</p>\r\n\r\n<p>2. Iuran Kegiatan Osis                                          Rp. 200.000</p>\r\n\r\n<p>3. Proses Peningkatan Mutu                                Rp. 200.000 </p>\r\n\r\n<p>4. Pengadaan Atribut (Osis & Pramuka)              Rp. 80.000</p>\r\n\r\n<p>5. Asuransi                                                           Rp. 25.000</p>\r\n\r\n<p>6. Seragam Sekolah                                            Rp. 435.000</p>\r\n\r\n<p><strong>                                                                Total :  Rp. 1.060.000</strong></p>\r\n', NULL, '2019-07-16 12:11:37', '2022-06-19 12:57:10');
 
 -- --------------------------------------------------------
 
@@ -322,8 +322,9 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `username`, `email`, `password`, `role`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 1, 0, '2019-07-12 02:28:33', '2019-07-12 23:37:48'),
 (3, 'muhammad zaki', 'zaki@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 1, '2021-07-24 04:09:28', '2022-06-08 12:09:39'),
-(5, 'Muhammad Fatwah', 'fatwah@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 1, '2021-07-24 04:36:38', '2022-06-08 12:09:48'),
-(7, 'Fatimah Zahra', 'zahra@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1, '2021-07-24 04:49:52', '2022-06-08 12:08:54');
+(5, 'Basuki Murdiyono', 'basuki@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 1, '2021-07-24 04:36:38', '2022-06-19 17:35:36'),
+(7, 'Fatimah Zahra', 'zahra@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1, '2021-07-24 04:49:52', '2022-06-08 12:08:54'),
+(8, 'useronly', 'user@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 0, '2022-06-19 17:37:44', NULL);
 
 --
 -- Indexes for dumped tables
@@ -455,7 +456,7 @@ ALTER TABLE `profil`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables

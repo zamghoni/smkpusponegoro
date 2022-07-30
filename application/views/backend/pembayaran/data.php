@@ -17,7 +17,7 @@
 <?php $this->view('message')?>
   <section class="panel">
     <header class="panel-heading">
-      
+
       <div class="col-lg-10">
         <h2 class="panel-title">Data <?=$page;?></h2>
       </div>
@@ -48,10 +48,10 @@
                 <td><?=strtoupper($data->atas_nama)?></td>
                 <td><?='Rp. '.$data->jumlah?></td>
                 <td><?='Dibuat :'.$data->created.'<br> Diupdate :'.$data->updated?><br>
-                <?php if ($data->status == 0) { ?> 
-              <a href="<?=site_url('pembayaran/lunas/'.$data->id)?>" title="Klik untuk merubah"><span class='label label-danger'>Pembayaran Masuk</span></a> 
-            <?php } else { ?> 
-              <a href="<?=site_url('pembayaran/cek/'.$data->id)?>" title="Klik untuk merubah"><span class='label label-success'>Lunas Pembayaran</span></a> 
+                <?php if ($data->status == 0) { ?>
+              <a href="<?=site_url('pembayaran/lunas/'.$data->id)?>" title="Klik untuk merubah"><span class='label label-danger'>Pembayaran Masuk</span></a>
+            <?php } else { ?>
+              <a href="<?=site_url('pembayaran/cek/'.$data->id)?>" title="Klik untuk merubah"><span class='label label-success'>Lunas Pembayaran</span></a>
             <?php } ?>
                   <!-- <?=$data->status == 0? "<span class='label label-danger'>Pembayaran Masuk</span>" : "<span class='label label-success'>Lunas Pembayaran</span>"?></td> -->
                 <td>
@@ -67,6 +67,9 @@
                   <?php } ?>
                 </td>
               <td class="actions-hover actions-fade">
+                <?php if ($data->status == 1) { ?>
+                  <a href="<?=site_url('pembayaran/cetak_pembayaran/'.$data->pembayaran_id)?>" title="Cetak Pembayaran" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+                <?php } ?>
 								<a href="<?=site_url('pembayaran/edit/'.$data->pembayaran_id)?>" title="Edit"><i class="fa fa-pencil"></i></a>
 								<a href="<?=site_url('pembayaran/del/'.$data->pembayaran_id)?>" onclick="return confirm('Apakah anda yakin ingin menghapus <?=$data->foto?>?')" title="Delete" class="delete-row"><i class="fa fa-trash-o"></i></a>
 							</td>

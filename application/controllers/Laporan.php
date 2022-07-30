@@ -20,7 +20,6 @@ class Laporan extends CI_Controller {
     $data = array(
       'page' => 'Laporan',
       'row'  => $this->M_laporan->cetak_pdf(),
-
 			'jurusan' => $this->M_jurusan->get(),
     );
 		$this->template->load($this->foldertemplate.'template',$this->folder.'data', $data);

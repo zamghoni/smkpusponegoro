@@ -17,7 +17,7 @@
 
   <section class="panel">
     <header class="panel-heading">
-      
+
       <div class="col-lg-10">
         <h2 class="panel-title">Data <?=$page .' '.$this->fungsi->user_login()->username?></h2>
       </div>
@@ -27,6 +27,17 @@
     </header>
     <div class="panel-body">
       <div class="table-responsive col-lg-12">
+        <?php
+        foreach($row->result()as $key => $data) {?>
+          <?php if ($data->id_user == $this->fungsi->user_login()->id){ ?>
+        <?php if ($data->status == 1) { ?>
+          <div class="text-center">
+              <h3>Selamat Pembayaran Anda sudah kami terima. <br> Silahkan cetak bukti pembayaran pada tombol dibawah ini</h3>
+              <a href="<?=site_url('pembayaran/cetak_pembayaran/'.$data->pembayaran_id)?>" title="Cetak Pembayaran" target="_blank" class="btn btn-danger"><i class="fa fa-file-pdf-o"></i> Cetak Bukti Pembayaran</a>
+            </div>
+            <hr>
+        <?php }}} ?>
+      </div>
       <table class="table table-hover mb-none table-bordered table-striped mb-none dataTable no-footer" id="datatable-default">
         <thead>
           <tr>
@@ -44,7 +55,7 @@
             foreach($row->result()as $key => $data) {?>
               <?php if ($data->id_user == $this->fungsi->user_login()->id){ ?>
             <tr>
-              <td><?=$data->username?></td>
+              <td><?=ucfirst($data->username)?></td>
               <td><?=$data->no_rek?></td>
               <td><?=strtoupper($data->atas_nama)?></td>
               <td><?='Rp. '.$data->jumlah?></td>
@@ -61,7 +72,9 @@
                 <?php } ?>
               </td>
               <td class="actions-hover actions-fade">
+                <?php if ($data->status != 1) { ?>
 								<a href="<?=site_url('pembayaran/edit_usr/'.$data->pembayaran_id)?>" title="Edit"><i class="fa fa-pencil"></i></a>
+              <?php } ?>
 							</td>
             </tr>
           <?php }

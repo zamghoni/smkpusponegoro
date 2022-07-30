@@ -10,7 +10,8 @@ class Pembayaran extends CI_Controller {
 	function __construct()
   {
     parent::__construct();
-    $this->load->model(['M_pembayaran','M_user','M_pendaftar']);
+    $this->load->model(['M_pembayaran','M_user','M_pendaftar','M_jurusan']);
+		$this->load->library(['pdf']);
   }
 
 	public function index()
@@ -171,11 +172,151 @@ class Pembayaran extends CI_Controller {
       redirect('pembayaran');
   }
 
+	public function cetak_pembayaran($id)
+	{
+		belum_login();
+		// cek_admin();
+		$query = $this->M_pembayaran->data_siswa($id);
+		if ($query->num_rows() > 0) {
+			$pembayaran = $query->row();
+		ob_start();
+		$pdf = new FPDF('P','mm',array(215,330));
+				 // membuat halaman baru
+				 $pdf->AddPage();
+				 $pdf->Image('./assets/backend/assets/images/Kop-Surat-SMK-Pusponegoro.jpg',0,0,-150);
+				 // setting jenis font yang akan digunakan
+				 $pdf->Cell(10,50,'',0,1);
+				 $pdf->SetFont('Times','B',14);
+				 // mencetak string
+				 $pdf->Cell(200,6,'BUKTI PEMBAYARAN SISWA',0,1,'C');
+				 $pdf->SetFont('Times','B',12);
+
+				 $pdf->SetY(70);
+				 $pdf->Cell(7,7,'');
+				 $pdf->Cell(65,7,'IDENTITAS SISWA');
+
+				 $pdf->SetFont('Times','',12);
+				 $pdf->SetY(75);
+				 $pdf->Cell(12,7,'');
+				 $pdf->Cell(50,7,'Nama Siswa');
+				 $pdf->Cell(7,7,':');
+				 $pdf->Cell(65,7,strtoupper($pembayaran->username));
+
+				 $pdf->SetY(80);
+				 $pdf->Cell(12,7,'');
+				 $pdf->Cell(50,7,'Jurusan');
+				 $pdf->Cell(7,7,':');
+				 $jurusan = $this->M_jurusan->get();
+				 foreach ($jurusan->result()as $key => $jur) {
+				 	if ($jur->jurusan_id == $pembayaran->id_jurusan) {
+						$pdf->Cell(65,7,$jur->judul);
+				 	}
+				 }
+
+				 $pdf->SetY(85);
+				 $pdf->Cell(12,7,'');
+				 $pdf->Cell(50,7,'Tanggal Pembayaran');
+				 $pdf->Cell(7,7,':');
+				 $pdf->Cell(65,7,$pembayaran->created);
+
+				 // Memberikan space kebawah agar tidak terlalu rapat
+				 $pdf->SetY(88);
+				 $pdf->Cell(12,6,'',0,1);
+				 $pdf->SetFont('Times','B',12);
+				 $pdf->Cell(7,6,'No',1,0);
+				 $pdf->Cell(80,6,'Uraian Kegiatan',1,0);
+				 $pdf->Cell(40,6,'Jumlah',1,0);
+				 $pdf->Cell(60,6,'Keterangan',1,0);
+
+				 $pdf->SetFont('Times','',12);
+				 $pdf->Cell(12,6,'',0,1);
+				 $pdf->Cell(7,6,'1',1,0);
+				 $pdf->Cell(80,6,'Iuran Dana Pendidikan (SPP) Per Bulan',1,0);
+				 $pdf->Cell(40,6,'Rp. 120.000',1,0);
+				 $pdf->Cell(60,6,'SPP Sudah dibayarkan bulan juli',1,0);
+
+				 $pdf->Cell(12,6,'',0,1);
+				 $pdf->Cell(7,6,'2',1,0);
+				 $pdf->Cell(80,6,'Iuran Kegiatan Osis',1,0);
+				 $pdf->Cell(40,6,'Rp. 200.000',1,0);
+				 $pdf->Cell(60,6,'Sudah dibayar 1 tahun',1,0);
+
+				 $pdf->Cell(12,6,'',0,1);
+				 $pdf->Cell(7,6,'3',1,0);
+				 $pdf->Cell(80,6,'Proses Peningkatan Mutu',1,0);
+				 $pdf->Cell(40,6,'Rp. 200.000',1,0);
+				 $pdf->Cell(60,6,'Sudah dibayar 1 tahun',1,0);
+
+				 $pdf->Cell(12,6,'',0,1);
+				 $pdf->Cell(7,6,'4',1,0);
+				 $pdf->Cell(80,6,'Pengadaan Atribut (Osis & Pramuka)',1,0);
+				 $pdf->Cell(40,6,'Rp. 80.000',1,0);
+				 $pdf->Cell(60,6,'-',1,0);
+
+				 $pdf->Cell(12,6,'',0,1);
+				 $pdf->Cell(7,6,'5',1,0);
+				 $pdf->Cell(80,6,'Asuransi',1,0);
+				 $pdf->Cell(40,6,'Rp. 25.000',1,0);
+				 $pdf->Cell(60,6,'-',1,0);
+
+				 $pdf->Cell(12,6,'',0,1);
+				 $pdf->Cell(7,6,'6',1,0);
+				 $pdf->Cell(80,6,'Seragam Sekolah',1,0);
+				 $pdf->Cell(40,6,'Rp. 435.000',1,0);
+				 $pdf->Cell(60,6,'-',1,0);
+
+				 $pdf->SetFont('Times','B',12);
+				 $pdf->Cell(12,6,'',0,1);
+				 // $pdf->Cell(7,6,'',1,0);
+				 $pdf->Cell(87,6,'Jumlah',1,0);
+				 $pdf->Cell(40,6,'Rp. 1.060.000',1,0);
+				 $pdf->Cell(60,6,'',1,0);
+
+				 $pdf->SetFont('Times','I',12);
+				 $pdf->SetY(145);
+				 $pdf->Cell(7,7,'');
+				 $pdf->Cell(65,7,'Terbilang: Satu Juta Enam Puluh Ribu Rupiah');
+
+				 $pdf->SetFont('Times','',12);
+				 $pdf->SetY(160);
+				 $pdf->Cell(65,7,'Catatan:');
+
+				 $pdf->SetY(165);
+				 $pdf->Cell(65,7,'- Disimpan sebagai bukti pembayaran yang SAH');
+
+				 $pdf->SetY(170);
+				 $pdf->Cell(65,7,'- Uang yang sudah dibayaran tidak dapat diminta kembali.');
+
+				 $pdf->SetFont('Times','',12);
+				 $pdf->SetY(145);
+				 $pdf->SetX(150);
+				 $pdf->Cell(65,7,'Tegal, '.date_indo(date('Y-m-d')),'C');
+
+				 $pdf->SetY(150);
+				 $pdf->SetX(150);
+				 $pdf->Cell(65,7,'Yang Menerima,','C');
+
+				 $pdf->SetY(170);
+				 $pdf->SetX(150);
+				 $pdf->Cell(65,7,'Administrasi Keuangan','C');
+
+			 } else {
+				$this->session->set_flashdata('error', "Data tidak ditemukan");
+				redirect('pembayaran');
+			}
+
+				 $pdf->Output('Bukti Pembayaran :'.$pembayaran->nama_siswa.'.pdf','I');
+				 // I: send the file inline to the browser. The plug-in is used if available. The name given by name is used when one selects the "Save as" option on the link generating the PDF.
+				// D: send to the browser and force a file download with the name given by name.
+				// F: save to a local file with the name given by name (may include a path).
+				// S: return the document as a string. name is ignored.
+				 $this->redirect('refresh');
+	}
 
 	//backend user
 	public function form_pay()
 	{
-		
+
 		belum_login();
 		$id  = $this->fungsi->user_login()->id;
 		$check= $this->M_pendaftar->daftar($id);
@@ -219,7 +360,7 @@ class Pembayaran extends CI_Controller {
 			'img'  => $this->M_pendaftar->get(),
 		);
 		$this->template->load($this->foldertemplate.'template2',$this->folder.'form_pay', $data);
-		
+
 	}
 
 	public function pembayaran()

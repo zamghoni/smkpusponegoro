@@ -61,4 +61,17 @@ class M_pembayaran extends CI_model {
     $this->db->delete('pembayaran');
 	}
 
+  public function data_siswa($id)
+  {
+    $this->db->from('pembayaran');
+    $this->db->join('pendaftar', 'pendaftar.user_id = pembayaran.id_user');
+    $this->db->join('user', 'user.id = pembayaran.id_user');
+    if ($id != null) {
+      $this->db->or_where('pembayaran_id',$id);
+    }
+    $this->db->order_by('pembayaran_id', 'asc');
+    $query = $this->db->get();
+    return $query;
+  }
+
 }

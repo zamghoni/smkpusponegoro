@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2022 at 01:49 PM
+-- Generation Time: Sep 03, 2022 at 07:16 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -187,8 +187,8 @@ CREATE TABLE `pembayaran` (
 
 INSERT INTO `pembayaran` (`pembayaran_id`, `id_user`, `no_rek`, `atas_nama`, `jumlah`, `foto`, `created`, `updated`) VALUES
 (2, 3, 2147483647, 'muhammad zaki', 1060000, 'pembayaran-210724-e5a7acc236.jpeg', '2021-07-24 04:16:52', NULL),
-(6, 7, 989282827, 'Umar', 1060000, 'pembayaran-210724-c525c5b4ae.jpeg', '2021-07-24 04:55:40', NULL),
-(7, 5, 1, 'aa', 1, 'pembayaran-210801-a8de839ca3.jpeg', '2021-07-26 02:44:01', '2021-08-01 07:54:28');
+(6, 7, 989282827, 'Umara', 1060000, 'pembayaran-210724-c525c5b4ae.jpeg', '2021-07-24 04:55:40', '2022-07-20 06:56:09'),
+(7, 5, 1, 'Basuki Murdiyono', 1, 'pembayaran-210801-a8de839ca3.jpeg', '2021-07-26 02:44:01', '2022-07-30 07:01:35');
 
 -- --------------------------------------------------------
 
@@ -321,9 +321,9 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `email`, `password`, `role`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 1, 0, '2019-07-12 02:28:33', '2019-07-12 23:37:48'),
-(3, 'muhammad zaki', 'zaki@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 1, '2021-07-24 04:09:28', '2022-06-08 12:09:39'),
-(5, 'Basuki Murdiyono', 'basuki@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 1, '2021-07-24 04:36:38', '2022-06-19 17:35:36'),
-(7, 'Fatimah Zahra', 'zahra@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1, '2021-07-24 04:49:52', '2022-06-08 12:08:54'),
+(3, 'muhammad zaki', 'zaki@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 1, '2021-07-24 04:09:28', '2022-07-20 06:55:56'),
+(5, 'Basuki Murdiyono', 'basuki@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 1, '2021-07-24 04:36:38', '2022-07-30 07:28:13'),
+(7, 'Fatimah Zahra', 'zahra@gmail.com', '202cb962ac59075b964b07152d234b70', 0, 1, '2021-07-24 04:49:52', '2022-07-20 06:55:45'),
 (8, 'useronly', 'user@gmail.com', 'ee11cbb19052e40b07aac0ca060c23ee', 0, 0, '2022-06-19 17:37:44', NULL);
 
 --
